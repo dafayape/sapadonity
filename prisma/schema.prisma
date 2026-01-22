@@ -1,0 +1,150 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum TaskStatus {
+  NOT_YET
+  IN_PROGRESS
+  DONE
+}
+
+enum AttachmentType {
+  FILE
+  LINK
+}
+
+enum NotificationType {
+  TASK_REMINDER
+  DEADLINE_APPROACHING
+  SYSTEM_UPDATE
+}
+
+enum NotificationMethod {
+  WEB
+  WHATSAPP
+  TELEGRAM
+}
+
+model User {
+  id                 String             @id @default(uuid())
+  fullName           String             @db.VarChar(100)
+  email              String             @unique @db.VarChar(255)
+  password           String             @db.VarChar(255)
+  role               UserRole           @default(USER)
+  avatar             String?            @db.VarChar(500)
+  notificationMethod NotificationMethod @default(WEB)
+  phoneNumber        String?            @db.VarChar(20)
+  telegramChatId     String?            @db.VarChar(100)
+  themeMode          String             @default("light") @db.VarChar(10)
+  accentColor        String             @default("#4F46E5") @db.VarChar(7)
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  deletedAt          DateTime?
+
+  tasks         Task[]
+  notifications Notification[]
+  refreshTokens RefreshToken[]
+
+  @@index([email])
+  @@index([role])
+  @@index([deletedAt])
+}
+
+model Task {
+  id          String       @id @default(uuid())
+  userId      String
+  title       String       @db.VarChar(200)
+  description String?      @db.Text
+  dueDate     DateTime
+  priority    TaskPriority @default(MEDIUM)
+  status      TaskStatus   @default(NOT_YET)
+  color       String       @default("#4F46E5") @db.VarChar(7)
+  reminder    Int?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  completedAt DateTime?
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  attachments   Attachment[]
+  notifications Notification[]
+
+  @@index([userId])
+  @@index([dueDate])
+  @@index([status])
+  @@index([priority])
+  @@index([userId, dueDate])
+  @@index([userId, status])
+}
+
+model Attachment {
+  id        String         @id @default(uuid())
+  taskId    String
+  type      AttachmentType
+  url       String         @db.VarChar(500)
+  filename  String?        @db.VarChar(255)
+  filesize  Int?
+  mimeType  String?        @db.VarChar(100)
+  createdAt DateTime       @default(now())
+
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([taskId])
+}
+
+model Notification {
+  id            String           @id @default(uuid())
+  userId        String
+  type          NotificationType
+  message       String           @db.Text
+  relatedTaskId String?
+  isRead        Boolean          @default(false)
+  createdAt     DateTime         @default(now())
+
+  user User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task Task? @relation(fields: [relatedTaskId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([isRead])
+  @@index([userId, isRead])
+  @@index([userId, createdAt])
+}
+
+model NationalHoliday {
+  id        String   @id @default(uuid())
+  date      DateTime @unique
+  name      String   @db.VarChar(100)
+  year      Int
+  createdAt DateTime @default(now())
+
+  @@index([date])
+  @@index([year])
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  userId    String
+  token     String   @unique @db.VarChar(500)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@index([expiresAt])
+}

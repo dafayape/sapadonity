@@ -1,0 +1,91 @@
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-21T20:06:21.790Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-21T20:06:21.793Z"}
+{"error":{"expiredAt":"2026-01-21T19:56:50.000Z","message":"jwt expired","name":"TokenExpiredError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/tasks","service":"sapadonity-api","timestamp":"2026-01-21T20:06:32.397Z"}
+{"error":{"message":"[\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"body\",\n      \"refreshToken\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]","name":"ZodError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/refresh","service":"sapadonity-api","timestamp":"2026-01-21T20:08:08.789Z"}
+{"error":{"message":"[\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"body\",\n      \"refreshToken\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]","name":"ZodError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/refresh","service":"sapadonity-api","timestamp":"2026-01-21T20:08:10.456Z"}
+{"error":{"message":"[\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"body\",\n      \"refreshToken\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]","name":"ZodError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/refresh","service":"sapadonity-api","timestamp":"2026-01-21T20:08:11.055Z"}
+{"error":{"message":"[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"body\"\n    ],\n    \"message\": \"Invalid input: expected object, received undefined\"\n  }\n]","name":"ZodError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/login","service":"sapadonity-api","timestamp":"2026-01-21T20:08:23.513Z"}
+{"error":{"message":"[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"body\"\n    ],\n    \"message\": \"Invalid input: expected object, received undefined\"\n  }\n]","name":"ZodError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/login","service":"sapadonity-api","timestamp":"2026-01-21T20:08:24.776Z"}
+{"error":{"body":"{\n  \"email\": \"daffa@sapadonity.com\"\n  \"password\": \"Password123\"\n}","expose":true,"status":400,"statusCode":400,"type":"entity.parse.failed"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/login","service":"sapadonity-api","timestamp":"2026-01-21T20:09:05.175Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-21T20:18:28.004Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-21T20:18:28.021Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-21T20:20:26.722Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-21T20:20:26.736Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-21T20:20:26.739Z"}
+{"error":{"statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/notifications","service":"sapadonity-api","timestamp":"2026-01-21T20:21:08.847Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-21T20:30:00.011Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T01:41:55.446Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T01:41:55.470Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T01:41:55.473Z"}
+{"error":{"clientVersion":"7.3.0","code":"P1001","meta":{"driverAdapterError":{"cause":{"host":"127.0.0.1","kind":"DatabaseNotReachable","port":5432},"name":"DriverAdapterError"},"modelName":"User"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/login","service":"sapadonity-api","timestamp":"2026-01-22T01:42:05.074Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T01:42:19.869Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T01:42:19.884Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T01:42:19.886Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T01:45:00.011Z"}
+{"error":{"expiredAt":"2026-01-21T20:35:16.000Z","message":"jwt expired","name":"TokenExpiredError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/notifications","service":"sapadonity-api","timestamp":"2026-01-22T01:50:59.946Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T02:00:00.014Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T02:15:00.012Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T02:30:00.013Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T02:45:00.012Z"}
+{"error":{"body":"{\n  \"email\": \"daffa@sapadonity.com\",\n  \"password\": \"Password123\",\n}","expose":true,"status":400,"statusCode":400,"type":"entity.parse.failed"},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/login","service":"sapadonity-api","timestamp":"2026-01-22T02:53:32.432Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T03:00:00.011Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T03:15:00.012Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T03:20:36.760Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T03:20:36.776Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T03:20:36.778Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T03:22:02.823Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T03:22:02.838Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T03:22:02.840Z"}
+{"error":{},"level":"error","message":"Error occurred:","method":"POST","path":"/api/upload","service":"sapadonity-api","timestamp":"2026-01-22T03:22:33.897Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T03:24:55.898Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T03:24:55.912Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T03:24:55.914Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T03:30:00.010Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T03:45:00.009Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T04:00:00.005Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T04:02:29.777Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T04:02:29.793Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T04:02:29.795Z"}
+{"error":{"statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/notifications","service":"sapadonity-api","timestamp":"2026-01-22T04:03:31.145Z"}
+{"error":{},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/register","service":"sapadonity-api","timestamp":"2026-01-22T04:08:05.775Z"}
+{"error":{"statusCode":401},"level":"error","message":"Error occurred:","method":"POST","path":"/api/tasks","service":"sapadonity-api","timestamp":"2026-01-22T04:08:39.757Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T04:15:00.007Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T04:30:57.106Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T04:30:57.115Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T04:30:57.118Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T04:40:01.949Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T04:40:01.959Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T04:40:01.961Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T04:45:00.022Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T06:20:30.623Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T06:20:30.633Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T06:20:30.636Z"}
+{"error":{"statusCode":401},"level":"error","message":"Error occurred:","method":"DELETE","path":"/api/tasks/123e4567-e89b-12d3-a456-426614174000","service":"sapadonity-api","timestamp":"2026-01-22T06:28:09.823Z"}
+{"level":"info","message":"Running scheduled checks...","service":"sapadonity-api","timestamp":"2026-01-22T06:30:00.013Z"}
+{"error":{},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/register","service":"sapadonity-api","timestamp":"2026-01-22T06:30:17.198Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T06:34:01.826Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T06:34:01.835Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T06:34:01.837Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T06:42:13.090Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T06:42:13.100Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T06:42:13.102Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T06:51:00.124Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T06:51:00.134Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T06:51:00.136Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/tasks/123e4567-e89b-12d3-a456-426614174000","requestId":"31279035-4fbc-4428-abf1-b97299b435dd","service":"sapadonity-api","timestamp":"2026-01-22T06:51:30.444Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/tasks","requestId":"8281a331-39a3-44be-9676-f5f6d46cbc5d","service":"sapadonity-api","timestamp":"2026-01-22T06:53:23.525Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"POST","path":"/api/tasks","requestId":"b28dca70-dc62-4275-9730-35b675faaf8f","service":"sapadonity-api","timestamp":"2026-01-22T06:53:42.922Z"}
+{"level":"info","message":"SIGINT received. Starting graceful shutdown...","service":"sapadonity-api","timestamp":"2026-01-22T06:54:46.865Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T07:05:22.390Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T07:05:22.399Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T07:05:22.402Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/users/profile","requestId":"921e1953-bf92-40ef-b5fb-839d48164f44","service":"sapadonity-api","timestamp":"2026-01-22T07:07:02.362Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/stats","requestId":"d7fcc1aa-0df9-485e-b731-936f3a28cfe3","service":"sapadonity-api","timestamp":"2026-01-22T07:07:33.970Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"PATCH","path":"/api/notifications/123e4567-e89b-12d3-a456-426614174000/read","requestId":"a8e62cdf-f3fa-4dd4-9574-2a05c28caff9","service":"sapadonity-api","timestamp":"2026-01-22T07:08:51.030Z"}
+{"level":"info","message":"SIGINT received. Starting graceful shutdown...","service":"sapadonity-api","timestamp":"2026-01-22T07:09:14.151Z"}
+{"level":"info","message":"Database connected successfully","service":"sapadonity-api","timestamp":"2026-01-22T07:09:22.222Z"}
+{"level":"info","message":"Cron system initialized","service":"sapadonity-api","timestamp":"2026-01-22T07:09:22.231Z"}
+{"level":"info","message":"Server running on http://localhost:5000","service":"sapadonity-api","timestamp":"2026-01-22T07:09:22.235Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"POST","path":"/api/auth/refresh","requestId":"c715cb0d-7644-4bd8-a136-3550e54db3c8","service":"sapadonity-api","timestamp":"2026-01-22T07:09:47.727Z"}
+{"error":{"isOperational":true,"name":"UnauthorizedError","statusCode":401},"level":"error","message":"Error occurred:","method":"GET","path":"/api/tasks","requestId":"5db9a9a3-557a-4389-82e4-c1eb719477d7","service":"sapadonity-api","timestamp":"2026-01-22T07:10:27.233Z"}
+{"level":"info","message":"SIGINT received. Starting graceful shutdown...","service":"sapadonity-api","timestamp":"2026-01-22T07:10:45.634Z"}
